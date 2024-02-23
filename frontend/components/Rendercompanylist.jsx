@@ -11,7 +11,7 @@ export  function RenderCompanyList() {
     // here the get request is sent to the server
     useEffect(() => {
         async function getResponce() {
-            const response = await axios.get('http://localhost:3000/company')
+            const response = await axios.get('https://assignment-backend-4q0q.onrender.com/company')
             console.log(response.data)
             setcompany(response.data)
         }

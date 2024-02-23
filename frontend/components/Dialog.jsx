@@ -14,7 +14,7 @@ export default function Dialog({id, name, location}) {
 
     // with this function the dialog is closed and the updated value is sent to sever
     async function handleDialogClose() {
-        const response = await axios.put(`http://localhost:3000/company/?id=${id}&name=${newName}&location=${newLocation}`)
+        const response = await axios.put(`https://assignment-backend-4q0q.onrender.com/company/?id=${id}&name=${newName}&location=${newLocation}`)
         console.log(response.data)
         setrender(true)
         open.close()

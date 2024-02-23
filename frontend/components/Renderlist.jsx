@@ -27,7 +27,7 @@ export default function RenderList({list}) {
                     <button className="bg-green-500 w-24 border rounded-md border-green-500" onClick={handleDialog}>Update</button>
                     <Dialog id={list.id} name={list.name} location={list.location}/>
                     <button className="bg-rose-500 w-24 border rounded-md border-rose-500" onClick={async() => {
-                        const response = await axios.delete(`http://localhost:3000/company/?id=${list.id}`)
+                        const response = await axios.delete(`https://assignment-backend-4q0q.onrender.com/company/?id=${list.id}`)
                         console.log(response.data)
                         setrender(true)
                     }}>Delete</button>

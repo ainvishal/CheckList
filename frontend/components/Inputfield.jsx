@@ -21,7 +21,7 @@ export  function Inputfields() {
                 </div>
                 <div className="pt-3">
                     <button className="w-full bg-indigo-500 border rounded-md" onClick={async() => {
-                        const response = await axios.post('http://localhost:3000/company', {
+                        const response = await axios.post('https://assignment-backend-4q0q.onrender.com/company', {
                             name:name,
                             location:location
                         })

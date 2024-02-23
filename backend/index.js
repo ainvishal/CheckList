@@ -9,7 +9,7 @@ const companyRouter = require('./routes/companyRoutes')
 
 // cors is defined
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:'https://assignment-frontend-nu-two.vercel.app/',
     methods: ['GET', 'POST', 'DELETE', 'PUT']
 }))
 // used for accessing body in Request of a method
